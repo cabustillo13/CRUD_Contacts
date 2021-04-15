@@ -6,6 +6,7 @@ import sys
 
 from PyQt5.QtWidgets import QApplication
 
+from .database import createConnection
 from .views import Window
 
 
@@ -13,8 +14,11 @@ def main():
     """Contactos -> Función principal."""
     # Crear la aplicación
     app = QApplication(sys.argv)
-    # Crear la ventana principal
+    # Conectar a la base de datos antes de crear cualquier ventana
+    if not createConnection("contacts.sqlite"):
+        sys.exit(1)
+    # Crear la ventana principa si la conexión fue exitosa
     win = Window()
     win.show()
     # Ejecutar en un loop este evento
-    sys.exit(app.exec()) 
+    sys.exit(app.exec_())
