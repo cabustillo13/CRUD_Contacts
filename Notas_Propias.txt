@@ -1,0 +1,4 @@
+ERRORES COMUNES QUE PUEDEN APARECER:
+
+Error: No module named 'PyQt5.QtSql'
+Solución: sudo apt-get install python3-pyqt5.qtsql

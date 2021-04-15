@@ -19,7 +19,7 @@ class Window(QMainWindow):
     def __init__(self, parent=None):
         """Inicializador."""
         super().__init__(parent)
-        self.setWindowTitle("RP Contacts")
+        self.setWindowTitle("Lista de Contactos")
         self.resize(550, 250)
         self.centralWidget = QWidget()
         self.setCentralWidget(self.centralWidget)
@@ -35,9 +35,9 @@ class Window(QMainWindow):
         self.table.setSelectionBehavior(QAbstractItemView.SelectRows)
         self.table.resizeColumnsToContents()
         # Create buttons
-        self.addButton = QPushButton("Add...")
-        self.deleteButton = QPushButton("Delete")
-        self.clearAllButton = QPushButton("Clear All")
+        self.addButton = QPushButton("Añadir...")
+        self.deleteButton = QPushButton("Borrar")
+        self.clearAllButton = QPushButton("Borrar Todo")
         # Extender la GUI
         layout = QVBoxLayout()
         layout.addWidget(self.addButton)
