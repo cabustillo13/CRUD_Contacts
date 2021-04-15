@@ -2,7 +2,7 @@
 
 <p align="center">
  <img width="100px" src="https://github.com/cabustillo13/CRUD_Contacts/blob/main/Imagenes/books.svg" align="center" alt="CRUD" />
- <h2 align="center">CRUD (Crear, Read, Update and Delete)</h2>
+ <h2 align="center">CRUD (Create, Read, Update and Delete)</h2>
  <p align="center"><b>Manejar base de datos de contactos de programadores.</b></p>
 
 </p>
