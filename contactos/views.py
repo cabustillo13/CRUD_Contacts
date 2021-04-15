@@ -121,8 +121,8 @@ class AddDialog(QDialog):
         self.emailField.setObjectName("Email")
         # Extender los campos de datos.
         layout = QFormLayout()
-        layout.addRow("Name:", self.nameField)
-        layout.addRow("Job:", self.jobField)
+        layout.addRow("Nombre:", self.nameField)
+        layout.addRow("Cargo:", self.jobField)
         layout.addRow("Email:", self.emailField)
         self.layout.addLayout(layout)
         # Agregar botones standards al cuadro de dialogo y conectarlos entre sí.
