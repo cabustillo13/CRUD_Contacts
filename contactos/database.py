@@ -29,7 +29,7 @@ def createConnection(databaseName):
     if not connection.open():
         QMessageBox.warning(
             None,
-            "RP Contact",
+            "Database de Contactos 2021",
             f"Database Error: {connection.lastError().text()}",
         )
         return False
